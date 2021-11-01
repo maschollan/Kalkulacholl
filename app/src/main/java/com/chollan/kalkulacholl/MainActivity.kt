@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         textHasil = findViewById(R.id.textHasil)
 
         btnTambah.setOnClickListener(this)
+        btnKurang.setOnClickListener(this)
+        btnKali.setOnClickListener(this)
+        btnBagi.setOnClickListener(this)
+        btnClear.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -59,6 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     angka1.text.clear()
                     angka2.text.clear()
                     textHasil.text = "0"
+                    Toast.makeText(this, "angka1 : $inputAngka1, angka 2: $inputAngka2, jml: ", Toast.LENGTH_LONG)
                 }
             }
         }
