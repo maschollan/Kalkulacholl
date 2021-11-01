@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     angka1.text.clear()
                     angka2.text.clear()
                     textHasil.text = "0"
-                    Toast.makeText(this, "angka1 : $inputAngka1, angka 2: $inputAngka2, jml: ", Toast.LENGTH_LONG)
                 }
             }
         }
